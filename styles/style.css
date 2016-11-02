@@ -20,37 +20,60 @@ body {
 
 }
 
+li {
+	 list-style-type: none;
+}
+
+a {
+	 text-decoration: none;
+	 color: black;
+}
+
  .hidden {
  	display: none;
 
  }
- ul li, .social-media {
+.menu li, .social-media {
  	display: inline-block;
  }
  .container {
- 	max-width: 1200px;
+ 	max-width: 768px;
  	background-color: white;
  	text-align: center;
+ 	margin: 0 auto;
+ 	text-transform: uppercase;
 
- }
- .important-in-city li, .unic-city li, .bottom-block {
- 	width: 31%;
  }
 
  .about-city {
- 	width: 18%;
+ 	float: left;
+ 	display: block;
+    background-color: #81b3d2;
+    box-sizing: border-box;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    color: white;
+    width: 33.3%;
+    min-height: 257px;
+    position: relative;
  }
 
  .block-photo {
- 	width: 80%;
+ 	width: 66.6%;
+ 	display: block;
+ 	float: left;
+ 	box-sizing: border-box;
+ 	min-height: 257px;
  }
 
  menu li {
  	width: 19%;
  }
 .social-media {
+    line-height: 48px;
+	width: 48px;
+	height: 48px;
 	background-color: #81b3d2;
-	padding: 15px 10px;
 }
 .welcome {
 	font-size: 44px;
@@ -65,9 +88,331 @@ body {
 	font-weight: 800;
 }
 .menu li {
-	margin-top: 0;
+	vertical-align: top;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
  .little-city {
 	font-size: 21px;
 	font-weight: 600;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.block-left {
+	display: block;
+	float: left;
+	width: 33.3%;
+}
+
+.sucks {
+	padding-bottom: 155px;
+}
+
+.little-city {
+	padding-bottom: 40px;
+}
+.real-life {
+	padding-top: 32px;
+	margin:0 auto;
+}
+.real-city {
+	padding-bottom: 30px;
+    width: 60%;
+    line-height: 18px;
+    margin: 0 auto;
+}
+.number1 {
+	width: 90%;
+    margin: 0 auto;
+}
+.number1, .real-life, .more-info, .check-in-date, .date-of-departure, .ranking-people  {
+	font-size: 14px;
+}
+
+.more-info {
+	color: #767676;
+	margin: 0 auto;
+}
+
+.tourism {
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+
+.info-tourist {
+	padding-top: 30px;
+	padding-bottom: 32px;
+    font-weight: 500;
+}
+
+.real-city, .info-tourist {
+	font-size: 21px;
+}
+.tourism:last-of-type {
+	padding-top: 53px;
+}
+.advantages {
+	padding-top: 50px;
+    padding-bottom: 65px;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+.interesting {
+	padding-top: 60px;
+	padding-bottom: 140px;
+}
+
+.city-avantage.more-info {
+	    width: 50%;
+}
+.interest-you {
+	font-size: 30px;
+	font-weight: 500;
+	padding-bottom:40px;
+}
+.interesting .more-info {
+	width: 60%;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.photo-top {
+	background: url('../img/background-img-top.png');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	background-size: cover;
+}
+menu .img-top {
+	padding-top: 0;
+}
+
+.photo-bottom {
+   background: url('../img/background-img-bottom.png');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	background-size: cover;
+	min-height: 271px;
+
+}
+.devils-bridge {
+    font-weight: 500;
+	font-size: 21px;
+	padding-bottom: 32px;
+}
+
+.numbers {
+	padding-bottom: 32px;
+}
+
+footer {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.visit, .button a, .brown {
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.popup {
+	text-align: center;
+	max-width: 570px;
+	text-transform: uppercase;
+}
+
+.block-search {
+	background-color: white;
+    padding-top: 55px;
+}
+
+.button {
+	padding: 22px 198px;
+	background-color: #81b3d2;
+	width: 20%;
+    margin: 0 auto;
+}
+
+.ranking-people, .block-search {
+	padding-bottom: 55px;
+}
+
+.brown {
+	background-color: #766357;
+	color: white;
+	padding: 35px 40px;
+    text-align: center;
+}
+
+.date {
+	padding-right: 22px;
+}
+.adults {
+	padding-right: 40px;
+}
+
+.children {
+	padding-left: 50px;
+	padding-right: 25px;
+}
+
+.button a {
+	color: white;
+	text-transform: uppercase;
+}
+.one-line {
+	display: inline-block;
+}
+
+.check-in-date, .date-of-departure {
+	padding-bottom: 30px;
+}
+
+input[type*="text"] {
+	background-image: url('../img/calendar.png');
+	background-position: 95% 50%;
+	background-repeat: no-repeat;
+	width: 346px;
+}
+
+input[type*="number"] {
+	text-align: center;
+	width: 50px;
+}
+
+.popup input {
+	background-color: #f2f2f2;
+	height: 38px;
+	padding-left: 10px;
+}
+
+.sort .block-left {
+ width: 16.6%;
+}
+
+.section-hotel .block-left {
+	width: 25%;
+	font-size: 14px;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.type-housing, .pool {
+	position: relative;
+}
+
+.read-more {
+	padding: 10px 15px;
+	background-color: #81b3d2;
+	
+}
+.amara-hotel a {
+	color: #ffffff;
+}
+
+main {
+	padding-top: 15px;
+}
+
+.complex, .type-of-accommodation {
+	padding-bottom: 30px;
+}
+
+.housing-cost {
+	padding-bottom: 15px;
+}
+
+.line-number:before {
+	border: 1px solid #ffffff;
+	
+}
+
+.line-number:after {
+
+	content: "";
+	border: 1px solid #ffffff;
+	position: absolute;
+    right: 95px;
+    width: 9px;
+    transform: translateY(7px);
+
+}
+
+.numbers-lines::before, .line-number:before {
+	content: "";
+    position: absolute;
+    left: 95px;
+    width: 9px;
+    transform: translateY(7px);
+}
+
+.numbers-lines::before {
+	border: 1px solid #000000;
+}
+
+.visit {
+    line-height: 48px;
+}
+
+.section-hotel .photo-hotel {
+	 width: 20%;
+}
+
+.section-hotel .amara-hotel {
+	width: 60%;
+	text-align: left;
+}
+
+.section-hotel .rank {
+	width: 20%;
+}
+
+.amara {
+	font-size: 21px;
+	font-weight: 400;
+	text-align: left;
+}
+.hostel {
+	float: left;
+	display: block;
+}
+
+.price {
+	float: right;
+	display: block;
+}
+
+.booking {
+	background-color: #766357;
+	padding: 10px 15px;
+}
+
+.infrastructure label::before, .type-of-housing label::before{
+	background-image: url(../img/checkbox.png);
+  content: "";
+  background-size: 100%;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  display: block;
+  left: 0px;
+  color: #c1c1c1;
+   top: -5px;
+   background-color: red;
+}
+
+.infrastructure {
+	position: relative;
+	padding-bottom: 22px;
 }
